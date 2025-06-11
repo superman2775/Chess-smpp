@@ -1,1 +1,15 @@
-
+{
+  "manifest_version": 3,
+  "name": "Global Chess Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Play Chess"
+  },
+  "permissions": [],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
