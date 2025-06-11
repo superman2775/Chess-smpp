@@ -1,2 +1,2 @@
 # Chess-smpp
-An upcoming widget for smpp
+maby an upcoming wiget for smpp
