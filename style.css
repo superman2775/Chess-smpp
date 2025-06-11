@@ -1,1 +1,12 @@
-
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+button {
+  margin: 8px;
+  padding: 10px 20px;
+}
+#board {
+  margin: 10px auto;
+}
