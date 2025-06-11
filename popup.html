@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Global Chess</title>
+  <link rel="stylesheet" href="chessboard.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="menu">
+    <h2>Global Chess</h2>
+    <button id="botMode">Play with Bot</button>
+    <button id="localMode">Multiplayer</button>
+  </div>
 
+  <div id="gameContainer" style="display:none;">
+    <div id="board" style="width: 320px;"></div>
+    <p id="status"></p>
+  </div>
+
+  <script src="chess.js"></script>
+  <script src="chessboard.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
