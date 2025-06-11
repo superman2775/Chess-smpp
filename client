@@ -1,0 +1,48 @@
+if (!gameStarted) {
+  return (
+    <div className="p-10 flex flex-col items-center gap-6">
+      <h1 className="text-3xl font-bold">Global Chess</h1>
+
+      <div className="flex flex-col items-center gap-3">
+        <Button onClick={() => setGameStarted(true)}>
+          Start Random Game
+        </Button>
+
+        <div className="mt-4 flex flex-col items-center gap-2">
+          <Button
+            onClick={() => {
+              const code = Math.floor(10000 + Math.random() * 90000).toString();
+              setMatchCode(code);
+            }}
+          >
+            Generate Game Code
+          </Button>
+          {matchCode && (
+            <div className="text-blue-600 font-mono text-lg">
+              Your Code: [{matchCode}]
+            </div>
+          )}
+        </div>
+
+        <div className="mt-4 flex gap-2">
+          <Input
+            placeholder="Enter code to join"
+            value={joinCode}
+            onChange={(e) => setJoinCode(e.target.value)}
+          />
+          <Button
+            onClick={() => {
+              if (/^\d{5}$/.test(joinCode)) {
+                setIsJoining(true);
+                setTimeout(() => setGameStarted(true), 1000); // simulate
+              }
+            }}
+          >
+            Join
+          </Button>
+        </div>
+        {isJoining && <div className="text-sm text-gray-500">Joining match...</div>}
+      </div>
+    </div>
+  );
+}
