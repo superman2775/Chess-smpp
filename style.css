@@ -1,12 +1,28 @@
 body {
   font-family: sans-serif;
   text-align: center;
+  color: whitesmoke;
   padding: 10px;
+  background-image: url(https://github.com/superman2775/backgrounds-and-stuff/blob/main/something.png?raw=true);
 }
+
+h2 {
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+  color: whitesmoke;
+}
+
 button {
   margin: 8px;
   padding: 10px 20px;
+  font-family: Arial;
+  text-align: center;
+  background-color: lightgreen;
+  border: solid greenyellow;
+  color: whitesmoke;
 }
+
 #board {
   margin: 10px auto;
 }
