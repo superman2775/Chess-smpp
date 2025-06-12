@@ -29,7 +29,6 @@ button {
 }
 
 .center{
-  margin-left: auto;
-  margin-right: auto;
-  heigth: 50%;
+  margin: auto;
+  height: 50%;
 }
