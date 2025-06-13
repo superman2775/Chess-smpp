@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Global Chess</title>
-  <link rel="stylesheet" href="chessboard.css" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Custom Chess</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="center" id="menu">
-    <img src="https://github.com/superman2775/backgrounds-and-stuff/blob/main/0c8bb59e-c9a1-4515-b1b9-1726eaecd2d5-removebg-preview.png?raw=true" alt="logo">
-    <div class="button-row">
-      <button id="botMode">Play with Bot</button>
-      <button id="localMode">Multiplayer</button>
-    </div>
-</div>
-
-  <div id="gameContainer" style="display:none;">
-    <div id="board" style="width: 320px;"></div>
-    <p id="status"></p>
+  <h2>Custom Chess</h2>
+  <div id="menu">
+    <button id="playBot">Play with Bot</button>
+    <button id="playLocal">Play 2-Player</button>
   </div>
-
-  <script src="chess.js"></script>
-  <script src="chessboard.js"></script>
+  <div id="chessboard" class="board hidden"></div>
   <script src="script.js"></script>
 </body>
 </html>
+
