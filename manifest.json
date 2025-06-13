@@ -1,15 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "Global Chess Extension",
+  "name": "Custom Global Chess",
   "version": "1.0",
+  "description": "Play chess vs bot or a friend on the same device.",
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Play Chess"
+    "default_icon": "icon.png"
   },
-  "permissions": [],
   "icons": {
     "16": "icon.png",
     "48": "icon.png",
     "128": "icon.png"
-  }
+  },
+  "permissions": []
 }
+
