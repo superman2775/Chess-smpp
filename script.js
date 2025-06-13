@@ -90,7 +90,6 @@ function handleClick(row, col) {
 }
 
 function isLegalMove(piece, r1, c1, r2, c2) {
-  // Very simple move rules: pawns move forward, rest can move anywhere
   const dest = board[r2][c2];
   if (piece.toLowerCase() === "p") {
     const dir = isWhite(piece) ? -1 : 1;
@@ -98,8 +97,6 @@ function isLegalMove(piece, r1, c1, r2, c2) {
     if (Math.abs(c1 - c2) === 1 && r2 === r1 + dir && dest !== "." && isWhite(piece) !== isWhite(dest)) return true;
     return false;
   }
-
-  // Allow rooks, bishops, etc. to move freely (not realistic)
   return dest === "." || isWhite(piece) !== isWhite(dest);
 }
 
@@ -129,3 +126,4 @@ function botMove() {
   turn = "w";
   renderBoard();
 }
+
