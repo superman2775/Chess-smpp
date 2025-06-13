@@ -1,6 +1,7 @@
 body {
   font-family: Arial;
   text-align: center;
+  margin: 10px;
 }
 
 .board {
@@ -21,9 +22,20 @@ body {
   text-align: center;
   font-size: 24px;
   cursor: pointer;
+  user-select: none;
 }
 
 .white { background-color: #f0d9b5; }
+.black { background-color: #b58863; }
+.selected { outline: 2px solid red; }
+.hidden { display: none; }
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+}
+5; }
 .black { background-color: #b58863; }
 .selected { outline: 2px solid red; }
 .hidden { display: none; }
