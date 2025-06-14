@@ -126,4 +126,3 @@ function botMove() {
   turn = "w";
   renderBoard();
 }
-
