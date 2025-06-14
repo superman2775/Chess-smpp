@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let turn = "w";
   let mode = "local";
 
-  document.getElementById("playBot").onclick = () => startGame("bot");
-  document.getElementById("playLocal").onclick = () => startGame("local");
+  document.getElementById("botMode").onclick = () => startGame("bot");
+  document.getElementById("localMode").onclick = () => startGame("local");
 
   function startGame(m) {
     mode = m;
