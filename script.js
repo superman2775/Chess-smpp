@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const boardEl = document.getElementById("chessboard");
   const menu = document.getElementById("menu");
   const pieces = {
-    r: "♜", n: "♞", b: "♝", q: "♛", k: "♚", p: "♟",
-    R: "♖", N: "♘", B: "♗", Q: "♕", K: "♔", P: "♙"
+    r: "👷🏿‍♂️", n: "🐴", b: "👳🏿‍♂️", q: "👸🏿", k: "🎅🏿", p: "👞",
+    R: "👷🏻‍♂️", N: "🦄", B: "👳🏼‍♂️", Q: "👸🏼", K: "🎅🏻", P: "👟"
   };
   let board = [];
   let selected = null;
